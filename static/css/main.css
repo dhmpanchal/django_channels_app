@@ -1,0 +1,15 @@
+.video-grid-container {
+    display: none;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: black;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 60% 20%;
+}
+
+video {
+    border-radius: 25%;
+    background-color: black;
+}

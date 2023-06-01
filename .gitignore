@@ -1,0 +1,9 @@
+venv/
+.vscode/
+.env
+media/
+django_channles/migrations/
+django_channles/__pycache__/
+chat/migrations/
+chat/__pycache__/
+db.sqlite3
