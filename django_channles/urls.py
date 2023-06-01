@@ -21,4 +21,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('chat.urls')),
+    path('django_celery/', include('app_Celery.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

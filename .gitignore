@@ -6,4 +6,6 @@ django_channles/migrations/
 django_channles/__pycache__/
 chat/migrations/
 chat/__pycache__/
+app_Celery/migrations/
+app_Celery/__pycache__/
 db.sqlite3
