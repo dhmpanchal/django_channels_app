@@ -16,16 +16,12 @@ def test_func(self):
 @shared_task(bind=True)
 def send_mail_func(self):
     users = get_user_model().objects.filter(is_superuser=False)
-    print("users---", users)
     for user in users:
-        print("user---", user)
         try:
             email_subject = "In App 1"
             email_body = "This is test email"
             to_email = user.email
-            print("email_subject---", email_subject)
-            print("email_body---", email_body)
-            print("to_email---", to_email)
+            
             send_mail(
                 subject=email_subject,
                 message=email_body,
